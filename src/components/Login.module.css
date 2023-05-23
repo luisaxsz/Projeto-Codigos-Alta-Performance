@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 .divider{
     border-top: 0.25em solid #000000;
 }
@@ -18,7 +19,10 @@
     margin-top: 2em;
     background-color: transparent ;
     color: #FFFFFF;
-    margin-left: 8em;  
+    margin-left: 4.5em;  
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
 }
 textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
@@ -30,7 +34,10 @@ button{
     border-radius: 2.6em;
     border-style: none;
     margin-top: 1em;
-    margin-left: 8em;
+    margin-left: 4.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
 }
 .buttonCadastro{
     background-color: #FFC306;
@@ -45,8 +52,7 @@ button{
 }
 .Logo{
     margin-top: 4em;
-    margin-left: 6em;
-    width: em;
+    margin-left: 4.2em;
 }
 .imgFundo{
     height: 50em;
@@ -60,5 +66,4 @@ input::placeholder{
     flex-direction: row;
     align-items:flex-start;
     justify-content:flex-start;
-
 }
