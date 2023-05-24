@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ flex-direction: column;
+ 
+ 
+}
+
+#fundoPng{
+  position: absolute;
+  z-index: 0;
+  width:100vw;
+  height: 100vh;
+  left: 0px;
+}
+
+#corpo{
+  height: 0em;
+}
+
+#cortina{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 25em;
+  height: 100vh;
+}
+
+.formulario{
+  position: absolute;
+  z-index: 1;
+  margin-left: 40px;
+  width: fit-content;
+  justify-content: center;
+  top: 3em;
+  left: 2em;
+
+}
+
+#logo{
+  width: 15em;
+}
+
+form{
+  margin: auto;
+}
+
+form hr{
+  justify-content: center;
+  border: none;
+  background-color: red;
+  border-radius: 30px;
+  height: 0.125em;
+}
+
+form input::placeholder{
+  color: red;
+  font-size: 20px;
+}
+
+form input{
+  border: 3px;
+  border-radius: 43px;
+  border-color: red;
+  border-style: solid;
+  color: red;
+  font-size: 20px;
+  padding-left: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 2.5em;
+  width: 230px;
+}
+
+form input[type='submit']{
+  height: 2em;
+  width: 10em;
+  padding: 0px;
+  margin: auto;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  font-size: 25px;
+  border: none;
+}
