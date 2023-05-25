@@ -43,7 +43,6 @@ function Reserva(){
                     </div>
                 </div>
             </div>
-        
         </body>
     )
 }
