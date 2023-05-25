@@ -40,6 +40,7 @@ body{
 .divider{
     border-top: 6em solid #FFC306;
     margin-top: 4.5em;
+    width: 100em;
 }
 .buttonContainer{
     display: flex;
