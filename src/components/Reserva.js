@@ -13,9 +13,9 @@ function Reserva(){
                     </div>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button>Cardápio</button>
-                    <button>Reserva</button>
-                    <button>Delivery</button>
+                    <button className={styles.transitionButton}>Cardápio</button>
+                    <input autoFocus type="button" value="Reserva" id={styles.buttonReserva} className={styles.transitionButton} />
+                    <button className={styles.transitionButton}>Delivery</button>
                 </div>
             </div>
             <div className={styles.divider}></div>
@@ -24,14 +24,14 @@ function Reserva(){
                 <div className={styles.containerForm}>
                     <form>
                         <label className={styles.label}>Nome</label> <br/>
-                        <input type='text'/> <br/>
+                        <input  className={styles.input} type='text'/> <br/>
                         <label className={styles.label}>Mesa para quantas pessoas?</label> <br/>
-                        <input type='text'/> <br/>
+                        <input className={styles.input} type='text'/> <br/>
                         <div className={styles.divider2}></div>
                         <label className={styles.label}>Data para a Reserva:</label> <br/>
-                        <input type='date'/> <br/>
+                        <input className={styles.input} type='date'/> <br/>
                         <label className={styles.label}>Horário(17:00 às 23:59)</label> <br/>
-                        <input type='time'/> <br/>
+                        <input className={styles.input} type='time'/> <br/>
                     </form>
                 </div>
                 <div className={styles.containerDescricao}>
@@ -46,5 +46,6 @@ function Reserva(){
         </body>
     )
 }
+
 
 export default Reserva
