@@ -133,9 +133,6 @@ textarea{
     color: #FFFFFF;
     font-size: 1.2em;
 }
-.buttonConfirmar, .buttonCancelar:hover{
-    
-}
 .buttonCancelar{
     background-color: #FFC306;;
 }
