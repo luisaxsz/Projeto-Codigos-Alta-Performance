@@ -14,7 +14,7 @@ function Reserva(){
                 </div>
                 <div className={styles.buttonContainer}>
                     <button className={styles.transitionButton}>Cardápio</button>
-                    <input autoFocus type="button" value="Reserva" id={styles.buttonReserva} className={styles.transitionButton} />
+                    <input autoFocus type="button" value="Reserva" className={styles.transitionButton} />
                     <button className={styles.transitionButton}>Delivery</button>
                 </div>
             </div>

@@ -51,7 +51,7 @@ body{
     border-radius: 2.3em;
     justify-content: space-evenly;
     margin-left: 22.3em;
-    margin-top: 250px;
+    margin-top: 15em;
     background-color: #D60024;
 }
 .containerForm{
@@ -133,21 +133,26 @@ textarea{
     color: #FFFFFF;
     font-size: 1.2em;
 }
+.buttonConfirmar:hover{
+    background-color:rgba(214, 0, 0, 0.5); ;
+}
+.buttonCancelar:hover{
+    background-color: rgba(255, 197, 6, 0.5);
+}
 .buttonCancelar{
-    background-color: #FFC306;;
+    background-color: #FFC306;
 }
 .buttonConfirmar{
     background-color: #D60024;
 }
 .transitionButton{
     border-radius: 2em;
-    width: 11.7em;
+    width: 11em;
     border-style: none;
     font-family: 'Inter', sans-serif;
     background-color:#D60024 ;
     color: #FFFFFF ;
     font-weight: 300;
-    font-size: 2.1em;
 }
 .transitionButton:focus{
     background-color: #FFC306;
