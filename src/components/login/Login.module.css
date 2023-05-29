@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+body{
+    margin:0em;
+    padding: 0em;
+}
+.divider{
+    border-top: 0.25em solid #000000;
+}
+.containerLogin{
+    background-color:#D60024 ;
+    box-shadow: 0px 0px 0.3em 0.3em rgba(0, 0, 0, 0.25);
+    width: 30em;
+    height: 50em;
+}
+.input{
+    width: 20.8em;
+    height: 4em ;
+    border-style: solid;
+    border-color: aliceblue;
+    filter: drop-shadow(0px 0.25em 0.25em rgba(0, 0, 0, 0.5));
+    border-radius: 2.6em;
+    padding-left: 1em;
+    margin-top: 2em;
+    background-color: transparent ;
+    color: #FFFFFF;
+    margin-left: 4.5em;  
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+button{
+    width: 22.5em;
+    height: 4em;
+    border-radius: 2.6em;
+    border-style: none;
+    margin-top: 1em;
+    margin-left: 4.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.buttonCadastro{
+    background-color: #FFC306;
+}
+.buttonLogin{
+    background-color: #FFFFFF;
+}
+.containerBox{
+    width: 1.5em;
+    height: 50em;
+    background-color:#FFC306;
+}
+.Logo{
+    margin-top: 4em;
+    margin-left: 4.2em;
+}
+.imgFundo{
+    height: 50em;
+    width: 80em;
+}
+input::placeholder{
+    color:#FFFFFF;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
