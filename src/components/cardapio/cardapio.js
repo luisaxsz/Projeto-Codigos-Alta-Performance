@@ -1,7 +1,7 @@
 import "./cardapio.css";
-import food from './imgs/sushi-balls-5878892.jpg';
-import Logo002 from './imgs/logo_mauricio.png'
-import fundo from './imgs/japanese-food-4984960.jpg'
+import food from '../imgs/sushi-balls-5878892.jpg';
+import Logo002 from '../imgs/logo_mauricio.png'
+import fundo from '../imgs/japanese-food-4984960.jpg'
 
 function Cardapio(){
     return (
