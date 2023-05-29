@@ -1,7 +1,7 @@
-import japafundo from './imgs/japanese-food-4984960.jpg';
-import logo from './imgs/logo-normal.png';
-import cortina from './imgs/fundo-cadastro.png';
-import styles from './formCadas.css';
+import japafundo from '../imgs/japanese-food-4984960.jpg';
+import logo from '../imgs/logo-normal.png';
+import cortina from '../imgs/fundo-cadastro.png';
+import styles from './fomularioDeCadastro.css';
 
 function Cadastro() {
   
