@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+body{
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+}
+.imgFundo{
+    width: 100em ;
+    height: 20em;
+    position: absolute;
+}
+.Logo002{
+    position: relative;
+    width: 10em;
+    height: 10em ;
+}
+.perfilContainer{
+    position:relative;
+    width: 15.75em;
+    margin-left: 73.12em;
+    margin-top: 1.4em ;
+    border-radius: 2.43em;
+    box-shadow: 0px 0.25em 0.25 rgba(0, 0, 0, 0.25);
+    height: 4.3em;
+    background-color: #D60024;
+}
+.perfil{
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 3.8em;
+    width: 3.8em;
+    margin-top: 0.15em;
+    margin-left: 11.5em;
+    border-radius: 100em ;
+}
+.divider{
+    border-top: 6em solid #FFC306;
+    margin-top: 4.5em;
+    width: 100em;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    width: 45em;
+    height: 3em;
+    border-radius: 2.3em;
+    justify-content: space-evenly;
+    margin-left: 22.3em;
+    margin-top: 15em;
+    background-color: #D60024;
+}
+.containerForm{
+    width:30em ;
+    height: 23em;
+    margin-top: 1.8em;
+    margin-left: 4em;
+    background-color:#C2C2C2;
+    border-radius: 1em;
+    padding: 1em 1em 2em 2em;
+    position: absolute;
+}
+.label{
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #767676;
+    line-height: 1.8em ;
+}
+.divider2{
+    border-top: 0.3em solid #A5A5A5;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.divider3{
+    position:inherit;
+    border-left: 0.3em solid #D60024;
+    height: 26.5em;
+    margin-left: 45em;
+    border-radius: 2em;
+    margin-top: 1.5em;
+}
+.containerReserva{
+    display: flex;
+    flex-direction: row;
+}
+.input{
+    border-style: none;
+    width: 25em;
+    height: 2em;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+textarea{
+    resize: none;
+    width: 23em;
+    height: 6em;
+    border-style: none;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+}
+.containerDescricao{
+    width: 37em;
+    height: 13em;
+    background-color: #C2C2C2;
+    margin-left: 10em;
+    margin-top: 1.7em;
+    padding: 1em;
+    border-radius: 1em;
+}
+.containerButtonReserva{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+.buttonConfirmar, .buttonCancelar{
+    width: 14em;
+    height: 4.25em;
+    border-radius: 3.6em ;
+    border-style: none;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+.buttonConfirmar:hover{
+    background-color:rgba(214, 0, 0, 0.5); ;
+}
+.buttonCancelar:hover{
+    background-color: rgba(255, 197, 6, 0.5);
+}
+.buttonCancelar{
+    background-color: #FFC306;
+}
+.buttonConfirmar{
+    background-color: #D60024;
+}
+.transitionButton{
+    border-radius: 2em;
+    width: 11em;
+    border-style: none;
+    font-family: 'Inter', sans-serif;
+    background-color:#D60024 ;
+    color: #FFFFFF ;
+    font-weight: 300;
+}
+.transitionButton:focus{
+    background-color: #FFC306;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    animation-timing-function: ease-in-out;
+    font-family: 'Inter', sans-serif;
+    color: #D60024;
+    font-weight: 300;
+}
