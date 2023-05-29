@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+header{
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+}
+
+#logo{
+    width: 10em;
+    position: absolute;
+}
+
+#fundo{
+    width: 100vw;
+    height: 30em;
+}
+
+#perfil{
+    color: white;
+    width: 10em;
+    height: 2.6em;
+    border-radius: 30px;
+    background-color: red;
+    position: absolute;
+    right: 1em;
+    top: 3em;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+#perfil p {
+    margin: 0.6em 0px 0px 0px;
+    display: inline-block;
+    
+}
+
+#icone{
+    color: black;
+    float: right;
+    width: auto;
+    height: 2.4em;
+    margin-top: 0.1em;
+    margin-right: 0.2em;
+    background-color: white;
+    border-radius: 35px;
+}
+
+#navegar {
+    align-items: center;
+    text-align: center;
+    margin-top: 0em;
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    top: 28em;
+}
+
+#navegar nav {
+    text-align: center;
+    align-items: center;
+    
+}
+
+#escolha {
+    background-color: rgba(214, 0, 36, 1);
+    padding: 0px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    height: 2em;
+    width: 30em;
+    align-items: center;
+}
+
+#escolha li {
+    cursor: pointer;
+    width: 4em;
+    height: 1.3em;
+    font-size: 25px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#escolha .selecionado {
+    background-color: rgba(255, 195, 6, 1);
+    color: rgba(214, 0, 36, 1);
+}
+
+header hr{
+    margin: 0px;
+    margin-top: -5px;
+    background-color: rgba(255, 195, 6, 1);
+    height: 0.2em;
+
+}
+
+main{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#bolinha{
+    margin: 1em 0em 1em 0em;
+    display: flex;
+    align-items: center;
+}
+
+#bolinha div{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 15em;
+}
+
+
+#bolinha label {
+    position: relative;
+    cursor: pointer;
+    
+  }
+
+  /* Estilizando o círculo externo */
+  #bolinha label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -3.1em;
+    height: 1em;
+    width: 1em;
+    border: 2px solid rgba(255, 166, 181, 1);
+    background-color: rgba(255, 166, 181, 1);
+    border-radius: 50%;
+  }
+
+  /* Estilizando o círculo interno quando o radio está marcado */
+  #bolinha input[type="radio"]:checked + label::before {
+    border-color: rgba(214, 0, 36, 1);
+    background-color: rgba(214, 0, 36, 1);
+  }
+
+  /* Estilizando o ponto interno quando o radio está marcado */
+  #bolinha input[type="radio"]:checked + label::before::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgba(214, 0, 36, 1);
+  }
+
+
+#endereco{
+    width: 40vw;
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0em 3em 0em 1em;
+    justify-content: space-between;
+}
+
+#endereco div{
+    background-color: rgba(232, 232, 232, 1);
+}
+
+#endereco h2{
+    letter-spacing: 3px;
+}
+
+#endereco input{
+    display: block;
+    width: 100%;
+}
+
+
+#endereco p,label{
+    text-align: start;
+}
+
+#endereco p:nth-child(odd) {
+    background-color: rgba(41, 41, 41, 1);
+}
+#endereco p:nth-child(even) {
+    background-color: rgba(57, 57, 57, 1);
+}
+
+#endereco p{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin: 0px;
+    height: 2em;
+    color: white;
+    text-align: left;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+    padding-left: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#endereco label{
+    display: block;
+    width: 100%;
+    height: 1.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    font-size: 20px;
+}
+
+#endereco input{
+    padding: 3px 0px 3px 2%;
+    width: 97%;
+    font-size: 20px;
+}
+
+#endereco button{
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(214, 0, 36, 1);
+    color: white;
+}
+
+#endereco span{
+    float: right;
+    margin-right: 1em;
+}
+
+#linha{
+    background-color: rgba(214, 0, 36, 1);
+    height: 34em;
+    width: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    justify-content: space-between;
+    position: relative;
+    top: 3em;
+}
+
+#carrinho{
+    background-color: chartreuse;
+    width: 40vw;
+    display: inline-block;
+    justify-content: space-between;
+    position: relative;
+    top: -10em;
+    margin: 0em 1em 0em 3em;
+}
+
+#carrinho h2{
+    letter-spacing: 3px;
+}
+
+#Items {
+    background-color: rgba(232, 232, 232, 1);
+}
+
+#locations h3{
+    background-color: rgba(41, 41, 41, 1);
+    cursor: pointer;
+    margin: 0px;
+    height: 2em;
+    color: white;
+    text-align: left;
+    padding-top: 0.7em;
+    padding-left: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#locations span{
+    float: right;
+    margin-right: 1em;
+}
+
+
+#locations p{
+    background-color: rgba(244, 244, 244, 1);
+    cursor: pointer;
+    margin: 0px;
+    height: 2em;
+    color: rgba(41, 41, 41, 1);
+    text-align: left;
+    padding-top: 0.7em;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+    padding-left: 1em;
+}
+
+#locations #check {
+    background-color: rgba(41, 41, 41, 1);
+    cursor: pointer;
+    margin: 0px;
+    height: 2em;
+    color: white;
+    text-align: left;
+    padding-top: 0.7em;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+    padding-left: 1em;
+}
+
+#check span{
+    text-align: center;
+    font-size: 25px;
+    float: right;
+    margin-right: 1em;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+}
