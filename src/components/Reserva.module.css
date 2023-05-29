@@ -4,6 +4,9 @@ body{
     margin: 0em;
     padding: 0em;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .container{
     display: flex;

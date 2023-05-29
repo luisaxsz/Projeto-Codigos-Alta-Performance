@@ -9,6 +9,7 @@ body{
  text-align: center;
  justify-content: center;
  flex-direction: column;
+ margin: 0em 0em 0em 0em;
 }
 
 header{
@@ -66,13 +67,12 @@ header{
     position: absolute;
     width: 100vw;
     z-index: 1;
-    top: 28em;
+    top: 27em;
 }
 
 #navegar nav {
     text-align: center;
     align-items: center;
-    
 }
 
 #escolha {
@@ -113,10 +113,7 @@ header hr{
 
 }
 
-main{
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+
 
 #bolinha{
     margin: 1em 0em 1em 0em;
@@ -171,11 +168,7 @@ main{
 
 #endereco{
     width: 40vw;
-    display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin: 0em 3em 0em 1em;
-    justify-content: space-between;
 }
 
 #endereco div{
@@ -184,13 +177,22 @@ main{
 
 #endereco h2{
     letter-spacing: 3px;
+    height: 1.8em;
 }
 
 #endereco input{
     display: block;
-    width: 100%;
+    width: 37em;
+    height: 3em;
+    border-style: none;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    margin-bottom: 1em;
+    margin-left: 0.15em;
 }
-
+#endereco input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 
 #endereco p,label{
     text-align: start;
@@ -251,33 +253,36 @@ main{
 
 #linha{
     background-color: rgba(214, 0, 36, 1);
-    height: 34em;
+    height: 45em;
     width: 5px;
     border-radius: 6px;
-    display: inline-block;
-    justify-content: space-between;
-    position: relative;
-    top: 3em;
+    top: 35em;
 }
-
-#carrinho{
-    background-color: chartreuse;
-    width: 40vw;
-    display: inline-block;
-    justify-content: space-between;
+#boxContainer{
+    display: inline-flex;
+    flex-direction: row;
     position: relative;
-    top: -10em;
+    width: 90em;
+}
+#carrinho{
+    width: 40vw;
     margin: 0em 1em 0em 3em;
 }
-
 #carrinho h2{
     letter-spacing: 3px;
 }
 
 #Items {
-    background-color: rgba(232, 232, 232, 1);
+    background-color: #393939;
+    color:rgba(249, 249, 249, 1);
+    font-size: 2.1em;
+    font-weight: 700;
+    text-align: left;
 }
-
+#locations{
+    width: 40vw;
+    margin: 0em 1em 0em 3em;
+}
 #locations h3{
     background-color: rgba(41, 41, 41, 1);
     cursor: pointer;
@@ -290,14 +295,10 @@ main{
     font-size: 20px;
     font-weight: bold;
 }
-
-
 #locations span{
     float: right;
     margin-right: 1em;
 }
-
-
 #locations p{
     background-color: rgba(244, 244, 244, 1);
     cursor: pointer;
@@ -305,7 +306,6 @@ main{
     height: 2em;
     color: rgba(41, 41, 41, 1);
     text-align: left;
-    padding-top: 0.7em;
     font-size: 20px;
     font-weight: bold;
     padding-top: 0.5em;
@@ -340,4 +340,10 @@ main{
     border-radius: 50px;
     width: 25px;
     height: 25px;
+}
+#endereco #addEnd{
+    background-color:#FFC306 ;
+    color: #3D3D3D;
+    border-radius: 2em;
+    margin-top: 2em;
 }
