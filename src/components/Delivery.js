@@ -1,8 +1,25 @@
-import  "./delivery.css";
+import   "./delivery.css";
 import Logo002 from "./imgs/logo_mauricio.png";
 import fundo from "./imgs/japanese-food-4984960.jpg";
+import React, {useState} from 'react'
 
 function Delivery() {
+  const [enderecoSelecionado, setEnderecoSelecionado] = useState(1);
+  const [endereco1Aberto, setEndereco1Aberto] = useState(true);
+
+  const selecionarEndereco = (endereco) => {
+    setEnderecoSelecionado(endereco);
+    setEndereco1Aberto(endereco === 1);
+  };
+
+  const [metodoSelecionado, setMetodoSelecionado] = useState(1);
+  const [metodoAberto, setMetodoAberto] = useState(true);
+
+  const selecionarMetodo = (metodo) => {
+    setMetodoSelecionado(metodo);
+    setMetodoAberto(metodo === 1);
+  };
+
   return (
     <div>
       <header>
@@ -43,21 +60,70 @@ function Delivery() {
         </div>
         <div id="boxContainer">
           <div id="endereco">
-              <h2>ENDEREÇO</h2>
-              <div>
-                  <p>Endereço 1</p>
+            <h2>ENDEREÇO</h2>
+            <div className="containerEnd">
+              <p>Endereço 1</p>
+              <button className="selectEnd" onClick={() => selecionarEndereco(1)}>+</button>
+            </div>
+            <div>
+              {endereco1Aberto &&(
+                <div>
                   <label>Rua</label>
-                  <input type="text" placeholder="tal de tal de tal"/>
+                  <input type="text" placeholder="Ex:Rua da gloria"/>
                   <label>Num. da Casa</label>
-                  <input type="number" placeholder="tal de tal de tal"/>
+                  <input type="number" placeholder="Ex:1"/>
                   <label>Complemento</label>
-                  <input type="text" placeholder="tal de tal de tal"/>
-                  <button>Adicionar Endereço</button>
-                  <p>Endereço 2 <span>+</span></p>
-                  <p>Endereço 3 <span>+</span></p>
-                  <p>Endereço 4 <span>+</span></p>
+                  <input type="text" placeholder="Ex:Bloco A"/>
+                  <button className="addEnd2">Adicionar Endereço</button>
+                </div>
+              )}
+              <div className="containerEnd">
+                <p>Endereço 2</p>
+                <button className="selectEnd" onClick={() => selecionarEndereco(2)}>+</button>
               </div>
-              <button id="addEnd">Novo endereco</button>
+              {enderecoSelecionado === 2 && (
+                <div>
+                  <label>Rua</label>
+                  <input type="text" placeholder="Ex:Rua da gloria"/>
+                  <label>Num. da Casa</label>
+                  <input type="number" placeholder="Ex:1"/>
+                  <label>Complemento</label>
+                  <input type="text" placeholder="Ex:Bloco A"/>
+                  <button className="addEnd2">Adicionar Endereço</button>
+                </div>
+              )}
+              <div className="containerEnd">
+                <p>Endereço 3</p>
+                <button className="selectEnd" onClick={() => selecionarEndereco(3)}>+</button>
+              </div>
+              {enderecoSelecionado === 3 && (
+                <div>
+                  <label>Rua</label>
+                  <input type="text" placeholder="Ex:Rua da gloria"/>
+                  <label>Num. da Casa</label>
+                  <input type="number" placeholder="Ex:1"/>
+                  <label>Complemento</label>
+                  <input type="text" placeholder="Ex:Bloco A"/>
+                  <button className="addEnd2">Adicionar Endereço</button>
+                </div>
+              )}
+              <div className="containerEnd">
+                <p>Endereço 4</p>
+                <button className="selectEnd" onClick={() => selecionarEndereco(4)}>+</button>
+              </div>
+              {enderecoSelecionado === 4 && (
+                <div>
+                  <label>Rua</label>
+                  <input type="text" placeholder="Ex:Rua da gloria"/>
+                  <label>Num. da Casa</label>
+                  <input type="number" placeholder="Ex:1"/>
+                  <label>Complemento</label>
+                  <input type="text" placeholder="Ex:Bloco A"/>
+                  <button className="addEnd2">Adicionar Endereço</button>
+                </div>
+              )}
+            </div>
+            <button id="addEnd">Novo endereco</button>
           </div>
           <div id="linha"></div>
           <div id="carrinhoContainer">
@@ -70,12 +136,51 @@ function Delivery() {
             </div>
             <div id="locations">
               <h3>Endereço Utilizado</h3>
-              <p id="check">Endereço 1 <span>v</span></p>
-              <p>Endereço 2 <span>+</span></p>
-              <p>Endereço 3 <span>+</span></p>
-              <p>Endereço 4 <span>+</span></p>
             </div>
           </div>
+        <div id="containerSelect">
+          <h2>FORMA DE PAGAMENTO</h2>
+          <div className="titlePag">
+            <p>Cartão de Crédito</p>
+            <button onClick={() => selecionarMetodo(1)}>+</button>
+          </div>
+          <div className="functionPag">
+            {metodoAberto &&(
+              <div className="formPag">
+                <label>Número do cartão</label> <br/> 
+                <input type="number" placeholder="Ex:2345 5678 8996 4567"/><br/> 
+                <label>Validade</label><br/> 
+                <input type="date"/><br/> 
+                <label>CVV</label><br/> 
+                <input type="number" placeholder="Ex:123"/><br/> 
+              </div>
+            )}
+            <div className="titlePag">
+              <p>Dinheiro</p>
+              <button  onClick={() => selecionarMetodo(2)}>+</button>
+            </div>
+            {metodoSelecionado === 2 &&(
+               <div className="formPag">
+                 <label>Precisa de Troco? Qual o valor?</label><br/> 
+                 <input type="number" placeholder="Ex:100" /><br/> 
+               </div>
+            )}
+              <div className="titlePag">
+                <p>Cartão de Débito</p>
+                <button  onClick={() => selecionarMetodo(3)}>+</button>
+              </div>
+            {metodoSelecionado === 3 &&(
+              <div className="formPag">
+                <label>Número do cartão</label><br/> 
+                <input type="number" placeholder="Ex:2345 5678 8996 4567"/><br/> 
+                <label>Validade</label><br/> 
+                <input type="date"/><br/> 
+                <label>CVV</label><br/> 
+                <input type="number" placeholder="Ex:123"/><br/> 
+              </div>
+            )}
+           </div>
+         </div>
         </div>
       </main>
     </div>
