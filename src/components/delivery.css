@@ -19,6 +19,7 @@ header{
 }
 main{
     width: 100%;
+    align-items: center;
 }
 
 #logo{
@@ -169,6 +170,7 @@ header hr{
 #endereco{
     width: 40vw;
     margin: 0em 3em 0em 1em;
+
 }
 
 #endereco div{
@@ -256,22 +258,107 @@ header hr{
 #linha{
     background-color: rgba(214, 0, 36, 1);
     height: 45em;
-    width: 2em;
+    width: 0.7em;
     border-radius: 6px;
-    top: 35em;
+    color: rgba(214, 0, 36, 1);
 }
 #boxContainer{
     display: inline-flex;
     flex-direction: row;
-    position: relative;
-    width: 90%;
+    width: auto;
 }
-#carrinho{
-    width: 40vw;
+
+#carrinhoContainer{
     margin: 0em 1em 0em 3em;
 }
+
+.produtos{
+    background-color: teal;
+    cursor: pointer;
+    margin: 0.3em;
+    width: 25vw;
+    height: auto;
+    display: inline-block;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: 9px 8px 25px 0.1px;
+    border-radius: 17px;
+ }
+ .detalhes{
+     margin: 2px;
+     float: right;
+     width: 50%;
+     height: 3.4em;
+     text-align: center;
+     align-items: center;
+ }
+ 
+ 
+ .detalhes h1{
+     margin: 0px;
+     margin-top: 0.4em;
+     font-size: 17px;
+     
+ }
+ .detalhes h2{
+     font-weight: lighter;
+     text-align: end;
+     margin: 5px;
+     font-size: 18px;
+ 
+ }
+ 
+ .produtos hr{
+     text-align: center;
+     margin: 0.1em;
+     height: 0.1em;
+     border-radius: 20px;
+     background-color: rgba(214, 0, 36, 1);
+     border: none;
+ }
+ .detalhes .ingredientes{
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+    font-weight: 100;
+    font-size: 16px;
+    height: 2.5em;
+    width: 6em;
+    overflow: auto;
+    
+ }
+ 
+ .fotProd{
+    margin: 0.2em 0em 0em 0.2em;
+     width: 40%;
+     height: 3em;
+     border-radius: 17px;
+ }
+
 #carrinho h2{
     letter-spacing: 3px;
+}
+
+#compras{
+    display: flex;
+    background-color: rgba(232, 232, 232, 1);
+    overflow: auto;
+    flex-wrap: wrap;
+    height: 40vh;
+    flex-direction: row;
+    align-items: center;
+  justify-content: center;
+}
+
+#compras h4{
+    color: black;
+    display: inline-block;
+    text-align: center;
+    width: 2em;
+    margin: auto;
+}
+
+#carrinho p{
+    font-size: 24px;
 }
 
 #Items {
@@ -281,9 +368,16 @@ header hr{
     font-weight: 700;
     text-align: left;
 }
+
+#Items p {
+    margin-bottom: 0.5em;
+    padding-top: 0.4em;
+    padding-left: 1em;
+}
+
 #locations{
-    width: 40vw;
-    margin: 0em 1em 0em 3em;
+    width: 100%;
+    
 }
 #locations h3{
     background-color: rgba(41, 41, 41, 1);
@@ -387,11 +481,49 @@ header hr{
     border-style: none;
 }
 #containerSelect{
-    position: absolute;
-    margin-top: 50em;
     width: 40vw;
-    margin-left: 27em;
+    margin: auto;
 }
+
+#pedir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pedir hr{
+    width: 74vw;
+    border-color: rgba(214, 0, 36, 1);
+    border-radius: 3px;
+}
+
+#pedir button{
+    cursor: pointer;
+    display: block;
+    margin-top: 0.3em;
+    height: 2em;
+    width: 80vw;
+    
+}
+
+#finalizar{
+    color: white;
+    border-radius: 35px;
+    border: none;
+    font-size: 25px;
+    background-color: rgba(67, 207, 106, 1);
+    letter-spacing: 3px;
+}
+
+#cancelar{
+    color: white;
+    border-radius: 35px;
+    border: none;
+    font-size: 25px;
+    background-color: rgba(214, 0, 36, 1);
+    letter-spacing: 3px;
+}
+
 .formPag{
     text-align: left;
     padding-left: 0.5em;
@@ -421,3 +553,4 @@ header hr{
     letter-spacing: 3px;
     height: 1.8em;
 }
+
