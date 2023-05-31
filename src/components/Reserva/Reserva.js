@@ -9,16 +9,19 @@ function Reserva(){
             <header>
                 <div className={styles.container}>
                     <img src={fundo} alt="Foto de Sushi" className={styles.imgFundo} />
-                    <img src={Logo002} alt="Logo" className={styles.Logo002}/>
-                    <div className={styles.perfilContainer}>
-                        <div className={styles.perfil}>
-                            <UserOutlined className={styles.icone}/>
+                    <div className={styles.headerWrapper}>
+                        <img src={Logo002} alt="Logo" className={styles.Logo002}/>
+                        <div className={styles.perfilContainer}>
+                            <p className={styles.nomePerfil}>Fulano</p>
+                            <div className={styles.perfil}>
+                                <UserOutlined className={styles.icone}/>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.buttonContainer}>
-                        <button autoFocus className={styles.transitionButton}>Cardápio</button>
-                        <button className={styles.transitionButton} >Reserva</button>
-                        <button className={styles.transitionButton}>Delivery</button>
+                        <div className={styles.buttonContainer}>
+                            <button autoFocus className={styles.transitionButton}>Cardápio</button>
+                            <button className={styles.transitionButton} >Reserva</button>
+                            <button className={styles.transitionButton}>Delivery</button>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.divider}></div>
