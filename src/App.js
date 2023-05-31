@@ -1,10 +1,9 @@
 import './App.css';
-import Reserva from './components/Reserva/Reserva'
-
+import Cadastro from './components/Cadastro/Cadastro'
 function App() {
   return (
     <body>
-      <Reserva/>
+      <Cadastro/>
     </body>
   );
 }

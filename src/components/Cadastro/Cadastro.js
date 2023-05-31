@@ -1,7 +1,7 @@
 import logo from './img/logo-normal.png';
 import japafundo from './img/japanese-food-4984960.jpg';
-import styles from './Cadastro02.module.css';
-function Cadastro02 (){
+import styles from './Cadastro.module.css';
+function Cadastro (){
     return(
         <body>
             <img src={japafundo} className={styles.imgFundo}/>
@@ -24,4 +24,4 @@ function Cadastro02 (){
     )
 }
 
-export default Cadastro02;
+export default Cadastro;
