@@ -1,12 +1,10 @@
 import './App.css';
-import Delivery from './components/Delivery/Delivery';
-//import Login from './components/Login';
-//import Reserva from './components/Reserva'
+import Cardapio from './components/Cardapio/Cardapio';
 
 function App() {
   return (
     <body>
-      <Delivery/>
+      <Cardapio/>
     </body>
   );
 }

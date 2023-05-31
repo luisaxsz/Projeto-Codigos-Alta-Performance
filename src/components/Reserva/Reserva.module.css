@@ -48,7 +48,7 @@ body{
 .buttonContainer{
     display: flex;
     flex-direction: row;
-    position:fixed;
+    position:absolute;
     width: 45em;
     height: 3em;
     border-radius: 2.3em;

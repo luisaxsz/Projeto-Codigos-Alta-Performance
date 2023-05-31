@@ -1,7 +1,7 @@
-import "./delivery.css";
-import Logo002 from "./imgs/logo_mauricio.png";
-import fundo from "./imgs/pexels-rajesh-tp-2098085.jpg";
-import food from "./imgs/japanese-food-4984960.jpg";
+//import "./Delivery/Delivery.module.css";
+import Logo002 from './img/logo_mauricio.png';
+import fundo from "./img/pexels-rajesh-tp-2098085.jpg";
+import food from "./img/japanese-food-4984960.jpg";
 import React, { useState } from "react";
 
 function Delivery() {
@@ -32,11 +32,9 @@ function Delivery() {
         </div>
         <div id="navegar">
           <nav>
-            <ul id="escolha">
-              <li>Cardápio</li>
-              <li>Reserva</li>
-              <li className="selecionado">Delivery</li>
-            </ul>
+            <button>Cardápio</button>
+            <button>Reserva</button>
+            <button>Carrinho</button>
           </nav>
         </div>
         <hr />

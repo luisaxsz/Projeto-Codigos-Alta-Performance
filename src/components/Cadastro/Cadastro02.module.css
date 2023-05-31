@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.imgFundo{
+    width: 100%;
+    height: 55em;
+    position: absolute;
+}
+.logo{
+    width: 17.5em ;
+    height: 21.6em;
+    margin-bottom: 2em;
+}
+.containerForm{
+    height: 55em;
+    width: 30em;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FDFDFD;
+}
+.divider01{
+    background-color: red;
+    width: 0.6em;
+    height: 55em;
+    border: none;
+    position: relative;
+    margin-left:30em ;
+    margin-top: 0em;
+}
+.cadastroForm{
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+    width: 21em;
+}
+.cadastroForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4em;
+}
+.divider02{
+    width: 21em;
+    height: 0.3em;
+    border-radius: 1em;
+    background-color:#D60024;
+    border: none;
+    margin-top: 2em;
+}
+.inputForm{
+    width: 21em;
+    height: 1em;
+    border-radius: 2.6em ;
+    border: 0.25em solid #D60024 ;
+    padding: 1em;
+    font-weight: 500;
+    color: #D60024;
+    font-size: 1em;
+    text-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+.inputForm::placeholder{
+    color: #D60024;
+    font-weight: 500;
+}
+.inputForm:focus{
+    outline: none;
+}
+.button{
+    width: 23em;
+    height: 3.5em;
+    border-radius: 2.6em ;
+    border: 0.3em solid #D60024 ;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #D60024;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+
