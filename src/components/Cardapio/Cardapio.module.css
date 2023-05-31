@@ -65,6 +65,9 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.containerButton:focus{
+    outline: none;
+}
 .transitionButton{
     width: 11.7em;
     height: 2em;
