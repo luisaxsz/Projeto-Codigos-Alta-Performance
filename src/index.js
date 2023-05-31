@@ -7,6 +7,7 @@ import Delivery from './components/Delivery';
 import Login from './components/Login';
 import Reserva from './components/Reserva'
 import Cardapio from './components/Carda'
+import Cadastro from './components/formCadas'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Cardapio />,
+  },
+  {
+    path: "cadastro",
+    element: <Cadastro />,
   },
 ])
 
