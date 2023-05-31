@@ -1,12 +1,12 @@
 import './App.css';
-//import Delivery from './components/Delivery';
+import Delivery from './components/Delivery/Delivery';
 //import Login from './components/Login';
-import Reserva from './components/Reserva'
+//import Reserva from './components/Reserva'
 
 function App() {
   return (
     <body>
-      <Reserva/>
+      <Delivery/>
     </body>
   );
 }
