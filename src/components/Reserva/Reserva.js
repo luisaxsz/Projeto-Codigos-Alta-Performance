@@ -2,8 +2,18 @@ import styles from './Reserva.module.css'
 import fundo from './img/fundo.png'
 import Logo002 from './img/logo002.png'
 import {UserOutlined} from '@ant-design/icons';
+import { useNavigate } from "react-router-dom";
 
 function Reserva(){
+
+    const navegacao = useNavigate();
+    const redirecionarParaDelivery = () => {
+        navegacao("/delivery")
+    }
+    const redirecionarParaCardapio = () => {
+        navegacao("/")
+    }
+
     return (
         <body>
             <header>
@@ -18,9 +28,9 @@ function Reserva(){
                             </div>
                         </div>
                         <div className={styles.buttonContainer}>
-                            <button autoFocus className={styles.transitionButton}>Cardápio</button>
+                            <button autoFocus className={styles.transitionButton} type="button" onClick={redirecionarParaCardapio}>Cardápio</button>
                             <button className={styles.transitionButton} >Reserva</button>
-                            <button className={styles.transitionButton}>Delivery</button>
+                            <button className={styles.transitionButton} type="button" onClick={redirecionarParaDelivery}>Delivery</button>
                         </div>
                     </div>
                 </div>
