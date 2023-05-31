@@ -1,9 +1,10 @@
 import './App.css';
-import Cadastro from './components/Cadastro/Cadastro'
+import Delivery from './components/Delivery/Delivery';
+
 function App() {
   return (
     <body>
-      <Cadastro/>
+      <Delivery/>
     </body>
   );
 }
