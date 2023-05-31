@@ -3,6 +3,8 @@ import Logo from './img/logo_mauricio.png';
 import styles from './Cardapio.module.css';
 import React from 'react';
 import {UserOutlined} from '@ant-design/icons';
+import item from './img/item.png'
+import {PlusCircleOutlined} from '@ant-design/icons';
 
 function Cardapio(){
     return(
@@ -17,13 +19,23 @@ function Cardapio(){
                     </div>
                 </div>
                 <div className={styles.containerButton}>
-                    <button className={styles.transitionButton}>Cardápio</button>
-                    <button autoFocus className={styles.transitionButton}>Reserva</button>
+                    <button autoFocus className={styles.transitionButton}>Cardápio</button>
+                    <button className={styles.transitionButton}>Reserva</button>
                     <button className={styles.transitionButton}>Carrinho</button>
                 </div>
+                <div className={styles.divider}></div>
             </header>
             <section>
-                
+                <div className={styles.containerItem}>
+                    <img src={item} alt='Item' className={styles.item}/>
+                    <div className={styles.descricao}>
+                        <h2>Prato 001</h2>
+                        <hr className={styles.divider02}></hr>
+                        <p>Resumo dos ingredientes do prato.Descrição não tão detalhada</p>
+                        <h3>R$50,00</h3>
+                    </div>
+                    <button className={styles.addItem}><PlusCircleOutlined className={styles.addIcon} /></button>
+                </div>
             </section>
         </body>
     )
