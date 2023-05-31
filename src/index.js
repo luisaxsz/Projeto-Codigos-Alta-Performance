@@ -1,12 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Delivery from './components/Delivery';
+import Login from './components/Login';
+import Reserva from './components/Reserva'
+import Cardapio from './components/Carda'
+
+const router = createBrowserRouter([
+  {
+    path: "delivery",
+    element: <Delivery />,
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "reserva",
+    element: <Reserva />,
+  },
+  {
+    path: "/",
+    element: <Cardapio />,
+  },
+])
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
