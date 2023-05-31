@@ -5,8 +5,17 @@ import React from 'react';
 import {UserOutlined} from '@ant-design/icons';
 import item from './img/item.png'
 import {PlusCircleOutlined} from '@ant-design/icons';
+import { useNavigate } from "react-router-dom";
 
 function Cardapio(){
+    const navegacao = useNavigate();
+    const redirecionarParaReserva = () => {
+        navegacao("/reserva")
+    }
+    const redirecionarParaCarrinho = () => {
+        navegacao("/carrinho")
+    }
+
     return(
         <body>
             <header>
@@ -20,8 +29,8 @@ function Cardapio(){
                 </div>
                 <div className={styles.containerButton}>
                     <button autoFocus className={styles.transitionButton}>Cardápio</button>
-                    <button className={styles.transitionButton}>Reserva</button>
-                    <button className={styles.transitionButton}>Carrinho</button>
+                    <button className={styles.transitionButton} type="button" onClick={redirecionarParaReserva}>Reserva</button>
+                    <button className={styles.transitionButton} type="button" onClick={redirecionarParaCarrinho}>Carrinho</button>
                 </div>
                 <div className={styles.divider}></div>
             </header>
