@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+    width: 100%;
+}
 header{
     width: 100%;
     position: absolute;
@@ -44,7 +47,7 @@ header{
     width: 3.8em ;
     height: 3.8em;
     border-radius: 5em;
-    margin-left: 10em;
+    margin-left: 11em;
 }
 .icone{
     color: black;
@@ -61,9 +64,7 @@ header{
     background-color: rgba(214, 0, 36, 1);
     border-radius: 2.3em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 }
 .containerButton:focus{
     outline: none;
@@ -92,13 +93,13 @@ header{
     margin-left: 0.8em ;
 }
 .containerItem{
-    position:absolute;
-    width: 28em;
+    position:relative;
+    width: 30em;
     height: 13em;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0.25em 0.25em 0.75em 0.1em rgba(0, 0, 0, 0.25);
     margin-top: 32em;
-    margin-left: 1.6em;
+    margin-right: 60em;
     display: flex;
     align-items: center;
     border-radius: 1em;
@@ -139,6 +140,5 @@ header{
 }
 .addIcon{
     font-size: 3em;
-    margin-left: 0.8em;
 }
 /*Fim da estilização da div de item*/

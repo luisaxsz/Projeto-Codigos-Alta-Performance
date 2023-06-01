@@ -3,17 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Delivery from './components/Delivery/Delivery'
 import Login from './components/Login/Login';
 import Reserva from './components/Reserva/Reserva'
 import Cardapio from './components/Cardapio/Cardapio'
 import Cadastro from './components/Cadastro/Cadastro'
 
 const router = createBrowserRouter([
-  {
-    path: "delivery",
-    element: <Delivery />,
-  },
   {
     path: "login",
     element: <Login />,

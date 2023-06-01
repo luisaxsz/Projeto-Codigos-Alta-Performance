@@ -30,7 +30,6 @@ function Cardapio(){
                 <div className={styles.containerButton}>
                     <button autoFocus className={styles.transitionButton}>Cardápio</button>
                     <button className={styles.transitionButton} type="button" onClick={redirecionarParaReserva}>Reserva</button>
-                    <button className={styles.transitionButton} type="button" onClick={redirecionarParaCarrinho}>Carrinho</button>
                 </div>
                 <div className={styles.divider}></div>
             </header>
