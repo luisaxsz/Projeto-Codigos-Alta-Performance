@@ -35,5 +35,12 @@
     }
   ],
   "reserva": [
+    {
+      "nome": "Arthur",
+      "numeroDeMesa": "12",
+      "dataDaReserva": "2004-07-10",
+      "horario": "17:00",
+      "id": 1
+    }
   ]
 }
