@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 function Reserva(){
 
     const navegacao = useNavigate();
+<<<<<<< Updated upstream
     const [nome, setNome] = useState("");
     const [numeroDeMesa, setNumeroDeMesa] = useState("");
     const [dataDaReserva, setDataDaReserva] = useState("");
@@ -44,10 +45,11 @@ function Reserva(){
     const redirecionarParaDelivery = () => {
         navegacao("/delivery")
     }
+=======
+>>>>>>> Stashed changes
     const redirecionarParaCardapio = () => {
         navegacao("/")
     }
-
     return (
         <body>
             <header>
@@ -64,7 +66,6 @@ function Reserva(){
                         <div className={styles.buttonContainer}>
                             <button autoFocus className={styles.transitionButton} type="button" onClick={redirecionarParaCardapio}>Cardápio</button>
                             <button className={styles.transitionButton} >Reserva</button>
-                            <button className={styles.transitionButton} type="button" onClick={redirecionarParaDelivery}>Delivery</button>
                         </div>
                     </div>
                 </div>
