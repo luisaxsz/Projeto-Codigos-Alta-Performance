@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 function Reserva(){
 
     const navegacao = useNavigate();
-<<<<<<< Updated upstream
     const [nome, setNome] = useState("");
     const [numeroDeMesa, setNumeroDeMesa] = useState("");
     const [dataDaReserva, setDataDaReserva] = useState("");
@@ -45,8 +44,6 @@ function Reserva(){
     const redirecionarParaDelivery = () => {
         navegacao("/delivery")
     }
-=======
->>>>>>> Stashed changes
     const redirecionarParaCardapio = () => {
         navegacao("/")
     }
